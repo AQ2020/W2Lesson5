@@ -72,7 +72,7 @@
     </nav>
     <!-- div.container>div.row -->
     <div class="container-fluid">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-interval="0" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -114,6 +114,7 @@
             <div class="container">
                 <h1 class="display-4">Things we are learning</h1>
                 <p class="lead">This is what we are learning today.</p>
+                <input type="button" class="btn btn-danger" data-target="#secondStriveModal" data-toggle="modal" value="Open Modal" />
             </div>
         </div>
         <div class="row">
@@ -149,10 +150,7 @@
                     <img src="javascript-logo.jpg" class="card-img-top" alt="HTML logo">
                     <div class="card-body">
                         <h5 class="card-title">JavaScript</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.
-                        </p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">JS DOCS</a>
                     </div>
                 </div>
@@ -186,7 +184,7 @@
             <textarea class="form-control" aria-label="Message"></textarea>
         </div>
         <!--<input type="submit" class="btn btn-primary btn-lg" value="Submit"> -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#strive">
             Submit
         </button>
     </div>
@@ -195,24 +193,49 @@
  
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="strive" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Code class</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                <ul>
+                    <li>Some text</li>
+                    <li>Some numbers</li>
+                    <li>Date & time</li>
+                </ul>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <button type="button" class="btn btn-primary">Okay</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="secondStriveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
         </div>
     </div>
 
